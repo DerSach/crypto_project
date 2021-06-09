@@ -4,7 +4,9 @@ Create your own portfolio of crypto and see your current profit
 **Prerequisite**
 
 pip install pandas
+
 pip install requests
+
 Get a free CoinAPI Key: https://www.coinapi.io/
 
 **Usage**
