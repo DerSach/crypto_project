@@ -1,5 +1,5 @@
 # crypto_project
-Create your own portfolio of crypto and see your current profit
+Create your own portfolio of crypto, see your current profit and keep track of your profit over time.
 
 ## **Prerequisite**
 
@@ -17,11 +17,11 @@ Execute from terminal this way:
 
 `python crypto_project.py YourCoinAPIKey`
 
-You will then have the possibility to either type "see", "add", "remove", or "profit" if you want to (i) "see" your current portfolio, (ii) "add" a crypto trade to your portfolio, (iii) "remove" a crypto trade from your portfolio, or (iv) get your current "profit"
+You will then have the possibility to either type "see", "add", "remove", or "profit" if you want to (i) "see" your current portfolio and historical profit, (ii) "add" a crypto trade to your portfolio, (iii) "remove" a crypto trade from your portfolio, or (iv) get your current "profit" and, if you want, save it to your historical profit csv file
 
-### See your current portfolio ###
+### See your current portfolio and historical profits ###
 
-You have nothing more to do than typing "see" when asked.
+You have nothing more to do than typing "see" when asked, and you will see your current crypto portfolio and, if it exists, your historical profits
 
 ### Add a crypto trade to your portfolio ###
 
@@ -52,6 +52,7 @@ Choose the trade you want to remove by selecting its index number in the leftmos
 ### Compute your total profit ###
 
 If you type "profit", you will be asked the currency in which you want your profit to be displayed (EUR, USD, ...).
+You will then have the option to add this profit to a csv file to keep track of your historical profits.
 
 Hope it helps :) !
 
