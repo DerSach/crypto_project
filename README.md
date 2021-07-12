@@ -115,12 +115,12 @@ In the end, after adding your first trades and adding your first historical prof
 ├── crypto_project_v2.py # program running the v2
 └── data
     ├── v1
-    │   ├── crypto_historical_profit.csv # historical profits csv build with the v1
-    │   └── crypto_portfolio.csv # current crypto portfolio csv build with the v1
+    │   ├── crypto_historical_profit.csv # historical profits csv built with the v1
+    │   └── crypto_portfolio.csv # current crypto portfolio csv built with the v1
     └── v2
-        ├── crypto_historical_profit.csv # historical profits csv build with the v2
-        ├── crypto_portfolio.csv # current crypto portfolio csv build with the v2
-        └── crypto_trades.csv # trades history csv build with the v2
+        ├── crypto_historical_profit.csv # historical profits csv built with the v2
+        ├── crypto_portfolio.csv # current crypto portfolio csv built with the v2
+        └── crypto_trades.csv # trades history csv built with the v2
 ```
 
 Hope it helps :) !
