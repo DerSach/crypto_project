@@ -1,5 +1,5 @@
 # crypto_project
-Create your own portfolio of crypto, see your current profit and keep track of your profit over time.
+Create your own portfolio of crypto currencies by entering each trade you made (Buy or Sell), see your current profit and keep track of your profit over time.
 
 ## **Prerequisite**
 
