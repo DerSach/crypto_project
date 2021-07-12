@@ -42,6 +42,8 @@ def add_crypto(df):
     list_x = [date, crypto.upper(), float(price), float(amount), currency.upper()]
     len_df = len(df)
     df.loc[len_df] = list_x
+    if not os.path.isdir('data/v1'):
+        os.makedirs('data/v1')
     df.to_csv('data/v1/crypto_portfolio.csv')
     return df
 
@@ -142,6 +144,8 @@ def get_historical_profit_df(profit, currency):
         hist_profit_df = pd.DataFrame(columns = col_list)
     date = datetime.now()
     hist_profit_df.loc[len(hist_profit_df)] = [date, profit, currency]
+    if not os.path.isdir('data/v1'):
+        os.makedirs('data/v1')
     hist_profit_df.to_csv('data/v1/crypto_historical_profit.csv')
     return print('Profit added to your historical profit csv. ')
 

@@ -79,6 +79,8 @@ def add_crypto_trade():
     list_x = [date, crypto.upper(), buyorsell, float(price), float(amount), currency.upper(), crypto_unit]
     len_df = len(trades_df)
     trades_df.loc[len_df] = list_x
+    if not os.path.isdir('data/v2'):
+        os.makedirs('data/v2')
     trades_df.to_csv('data/v2/crypto_trades.csv')
     portfolio_df = trades_df.groupby('crypto',as_index=False)['crypto_unit'].sum()
     portfolio_df.to_csv('data/v2/crypto_portfolio.csv')
@@ -183,6 +185,8 @@ def get_historical_profit_df(profit, currency):
         hist_profit_df = pd.DataFrame(columns = col_list)
     date = datetime.datetime.now()
     hist_profit_df.loc[len(hist_profit_df)] = [date, profit, currency]
+    if not os.path.isdir('data/v2'):
+        os.makedirs('data/v2')
     hist_profit_df.to_csv('data/v2/crypto_historical_profit.csv')
     return print('Profit added to your historical profit csv. ')
 
