@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 import os.path
 import pyinputplus as pyip
-from datetime import datetime
+import datetime
 
 def get_crypto_df():
     ''' Upload our portfolio csv or create one if it does not exist '''
@@ -142,7 +142,7 @@ def get_historical_profit_df(profit, currency):
     else:
         col_list = ['date','profit','currency']
         hist_profit_df = pd.DataFrame(columns = col_list)
-    date = datetime.now()
+    date = datetime.datetime.now()
     hist_profit_df.loc[len(hist_profit_df)] = [date, profit, currency]
     if not os.path.isdir('data/v1'):
         os.makedirs('data/v1')
