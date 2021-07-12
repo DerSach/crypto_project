@@ -121,7 +121,7 @@ In the end, after adding your first trades and adding your first historical prof
         ├── crypto_historical_profit.csv # historical profits csv build with the v2
         ├── crypto_portfolio.csv # current crypto portfolio csv build with the v2
         └── crypto_trades.csv # trades history csv build with the v2
-`
+```
 
 Hope it helps :) !
 
