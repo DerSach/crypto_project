@@ -13,7 +13,7 @@ Get a free CoinAPI Key: https://www.coinapi.io/ (free account limited to 100 req
 
 ## **Versions history**
 
-- V1: enables to build a portfolio of crypto by only adding Buy orders (and not sell orders), as well as removing some trades and getting the current value of your crypto portfolio, as well as storing it in a historical profit csv file.
+- V1: enables to build a portfolio of crypto by only adding Buy orders (and not Sell orders), as well as removing some trades and getting the current value of your crypto portfolio, as well as storing it in a historical profit csv file
 - V2: adding ability to enter Sell orders. Your profit is now composed of three parts: the amount recovered (amount of crypto sold) + your current outstanding crypto portfolio market value - the amount invested (amount of crypto bought)
 
 ## **Usage (v2)**
@@ -108,26 +108,18 @@ You will then have the option to add this profit to a csv file to keep track of 
 ## **Directory structure**
 
 In the end, after adding your first trades and adding your first historical profits to a csv as offered by the program, you will have this directory structure:
+
 `
 .
 ├── crypto_project_v1.py # program running the v1
-
 ├── crypto_project_v2.py # program running the v2
-
 └── data
-
     ├── v1
-    
     │   ├── crypto_historical_profit.csv # historical profits csv build with the v1
-    
     │   └── crypto_portfolio.csv # current crypto portfolio csv build with the v1
-    
     └── v2
-    
         ├── crypto_historical_profit.csv # historical profits csv build with the v2
-        
         ├── crypto_portfolio.csv # current crypto portfolio csv build with the v2
-        
         └── crypto_trades.csv # trades history csv build with the v2
 `
 
