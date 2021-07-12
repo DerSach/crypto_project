@@ -109,7 +109,7 @@ You will then have the option to add this profit to a csv file to keep track of 
 
 In the end, after adding your first trades and adding your first historical profits to a csv as offered by the program, you will have this directory structure:
 
-`
+```
 .
 ├── crypto_project_v1.py # program running the v1
 ├── crypto_project_v2.py # program running the v2
@@ -126,3 +126,5 @@ In the end, after adding your first trades and adding your first historical prof
 Hope it helps :) !
 
 DerSach
+
+
