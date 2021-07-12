@@ -62,7 +62,31 @@ Choose the trade you want to remove by selecting its index number in the leftmos
 If you type "profit", you will be asked the currency in which you want your profit to be displayed (EUR, USD, ...).
 You will then have the option to add this profit to a csv file to keep track of your historical profits.
 
-## **Usage (v1)**
+## **Directory structure**
+
+In the end, after adding your first trades and adding your first historical profits to a csv as offered by the program, you will have this directory structure:
+
+```
+.
+├── crypto_project_v1.py # program running the v1
+├── crypto_project_v2.py # program running the v2
+└── data
+    ├── v1
+    │   ├── crypto_historical_profit.csv # historical profits csv built with the v1
+    │   └── crypto_portfolio.csv # current crypto portfolio csv built with the v1
+    └── v2
+        ├── crypto_historical_profit.csv # historical profits csv built with the v2
+        ├── crypto_portfolio.csv # current crypto portfolio csv built with the v2
+        └── crypto_trades.csv # trades history csv built with the v2
+```
+
+Hope it helps :) !
+
+DerSach
+
+
+
+## **Old usage (v1)**
 
 Execute from terminal this way:
 
@@ -104,27 +128,4 @@ Choose the trade you want to remove by selecting its index number in the leftmos
 
 If you type "profit", you will be asked the currency in which you want your profit to be displayed (EUR, USD, ...).
 You will then have the option to add this profit to a csv file to keep track of your historical profits.
-
-## **Directory structure**
-
-In the end, after adding your first trades and adding your first historical profits to a csv as offered by the program, you will have this directory structure:
-
-```
-.
-├── crypto_project_v1.py # program running the v1
-├── crypto_project_v2.py # program running the v2
-└── data
-    ├── v1
-    │   ├── crypto_historical_profit.csv # historical profits csv built with the v1
-    │   └── crypto_portfolio.csv # current crypto portfolio csv built with the v1
-    └── v2
-        ├── crypto_historical_profit.csv # historical profits csv built with the v2
-        ├── crypto_portfolio.csv # current crypto portfolio csv built with the v2
-        └── crypto_trades.csv # trades history csv built with the v2
-```
-
-Hope it helps :) !
-
-DerSach
-
 
