@@ -14,7 +14,7 @@ Get a free CoinAPI Key: https://www.coinapi.io/ (free account limited to 100 req
 ## **Versions history**
 
 - V1: enables to build a portfolio of crypto by only adding Buy orders (and not Sell orders), as well as removing some trades and getting the current value of your crypto portfolio, as well as storing it in a historical profit csv file
-- V2: adding ability to enter Sell orders. Your profit is now composed of three parts: the amount recovered (amount of crypto sold) + your current outstanding crypto portfolio market value - the amount invested (amount of crypto bought)
+- V2: adding ability to enter Sell orders. Your profit is now composed of three parts: the amount recovered (amount of crypto sold) + your current outstanding crypto portfolio market value - the amount invested (amount of crypto bought). (Update Jan 2025) Also adding the possibility to register stop market orders (but won't affect your trade and portfolios dfs, for information only).
 
 ## **Usage (v2)**
 
@@ -22,11 +22,11 @@ Execute from terminal this way:
 
 `python crypto_project_v2.py YourCoinAPIKey`
 
-You will then have the possibility to either type "see", "add", "remove", or "profit" if you want to (i) "see" your current portfolio and historical profit, (ii) "add" a crypto trade (Buy or Sell) to your portfolio, (iii) "remove" a crypto trade from your portfolio, or (iv) get your current "profit" and, if you want, save it to your historical profit csv file
+You will then have the possibility to either type "see", "add", "remove", "profit", "add_stop", or "remove_stop" if you want to (i) "see" your current portfolio and historical profit as well as your stop orders, (ii) "add" a crypto trade (Buy or Sell) to your portfolio, (iii) "remove" a crypto trade from your portfolio, (iv) get your current "profit" and, if you want, save it to your historical profit csv file, (v) add a stop market order (Buy or Sell), or (vi) remove a stop market order.
 
-### See your current portfolio and historical profits ###
+### See your current portfolio, stop market orders, and historical profits ###
 
-You have nothing more to do than typing "see" when asked, and you will see (i) your trades history, (ii) your current crypto portfolio and, if it exists, (iii) your historical profits
+You have nothing more to do than typing "see" when asked, and you will see (i) your trades history, (ii) your current crypto portfolio, (iii) your stop market orders, and, if it exists, (iv) your historical profits
 
 ### Add a crypto trade to your portfolio ###
 
@@ -57,6 +57,13 @@ For example if you bought for 100 US dollars of Bitcoin at a price of 30,000 USD
 After typing "remove", your current portfolio will be displayed.
 Choose the trade you want to remove by selecting its index number in the leftmost column you see (be careful, it starts at 0 and not 1!)
 
+### Add or Remove a crypto stop market order ###
+
+When typing "add_stop" the process is the same that for "add" unless we rather ask you the number of crypto units that will be traded if this stop market order is executed rather than the amount of the trade (this one being automatically computed).
+
+The "remove_stop" function works in the same way as the "remove" function.
+
+
 ### Compute your total profit ###
 
 If you type "profit", you will be asked the currency in which you want your profit to be displayed (EUR, USD, ...).
@@ -76,6 +83,7 @@ In the end, after adding your first trades and adding your first historical prof
     │   └── crypto_portfolio.csv # current crypto portfolio csv built with the v1
     └── v2
         ├── crypto_historical_profit.csv # historical profits csv built with the v2
+        ├── crypto_stop_orders.csv # current crypto stop orders csv built with the v2
         ├── crypto_portfolio.csv # current crypto portfolio csv built with the v2
         └── crypto_trades.csv # trades history csv built with the v2
 ```
